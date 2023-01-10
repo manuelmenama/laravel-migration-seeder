@@ -1,0 +1,26 @@
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    height: 100px;
+    background-color: gray;
+    nav{
+        padding: 0 2rem;
+        height: 100%;
+        ul{
+            height: 100%;
+        }
+    }
+}
+
+main{
+    height: calc(100vh - 200px);
+}
+
+footer{
+    height: 100px;
+    background-color: gray;
+}
