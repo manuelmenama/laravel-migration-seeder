@@ -30,6 +30,7 @@ header{
 
 main{
     height: calc(100vh - 200px);
+    overflow: auto;
 }
 
 footer{
