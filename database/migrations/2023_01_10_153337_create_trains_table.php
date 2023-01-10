@@ -31,10 +31,10 @@ return new class extends Migration
             $table->string('to', 30);
             $table->time('departure');
             $table->time('arrival');
-            $table->string('train_number', 5);
-            $table->string('couch');
-            $table->tinyInteger('is_on_time');
-            $table->string('couch');
+            $table->smallInteger('train_number')->unsigned();
+            $table->string('total_couch');
+            $table->tinyInteger('is_on_time')->default(1);
+            $table->tinyInteger('is_deleted')->default(0);
             $table->timestamps();
         });
     }
