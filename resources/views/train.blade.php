@@ -29,8 +29,8 @@
                     <td>{{ $train->arrival }}</td>
                     <td>{{ $train->company }}</td>
                     <td>{{ $train->total_couch }}</td>
-                    <td>{{ $train->is_on_time }}</td>
-                    <td>{{ $train->is_deleted }}</td>
+                    <td>{{ $train->is_on_time ? 'Yes' : 'No' }}</td>
+                    <td>{{ (!$train->is_deleted) ? 'No' : 'Yes' }}</td>
                 </tr>
 
             @endforeach
