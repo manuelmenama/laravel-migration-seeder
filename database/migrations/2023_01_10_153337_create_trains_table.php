@@ -32,7 +32,7 @@ return new class extends Migration
             $table->time('departure');
             $table->time('arrival');
             $table->smallInteger('train_number')->unsigned();
-            $table->string('total_couch');
+            $table->tinyInteger('total_couch');
             $table->tinyInteger('is_on_time')->default(1);
             $table->tinyInteger('is_deleted')->default(0);
             $table->timestamps();
